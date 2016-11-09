@@ -4,7 +4,7 @@
 /*
 * 	Nokia 5100, 5110, 3310 LCD display Arduino library
 * 
-* 	Details on: gameinstance.com/post/
+* 	Details on: https://www.gameinstance.com/post/14/Nokia-5110-LCD-for-Arduino
 */
 class LCDNokia5110 {
 	
