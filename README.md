@@ -8,9 +8,6 @@ Needs to be implemented, not instantiated, as per the following example:<br />
 //------------------------
 #include <SerialCommand.h>
 
-/*
- * The app specific serial command class.
- */
 class MySerialCommand : public SerialCommand {
 
   protected:
