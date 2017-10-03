@@ -5,8 +5,52 @@
  * Abstract serial command class.
  * 
  * Needs to be implemented as per
- * README.md indications.
- */
+ * the following example:
+*/
+/*
+#include <SerialCommand.h>
+
+class MySerialCommand : public SerialCommand {
+
+  protected:
+
+    /// runs the command
+    bool Run() {
+      // 
+      switch (data[0]) {
+        // 
+        case '?':
+          // identify
+          //Identify();
+          return true;
+        case 'd':
+          // dump the FSM state
+          //Dump();
+	        return true;
+      }
+      // unknown command
+      Serial.println("Unknown command!");
+      return false;
+    };
+};
+
+void setup() {
+  // 
+  sc.Init(9600);
+  // the rest of the setup code
+}
+
+void loop() {
+  // 
+  if (sc.Read()) {
+    // 
+    sc.Execute();
+  }
+  // the rest of the loop code
+}
+
+*/
+
 class SerialCommand {
 
   public:
