@@ -3,7 +3,7 @@ Arduino libraries:<br />
 1. NTC Thermistor
 2. LCD Nokia 5110
 3. SerialCommand
-Needs to be implemented, not instantiated, as per the following example:
+Needs to be implemented, not instantiated, as per the following example:<br />
 
 //------------------------
 #include <SerialCommand.h>
