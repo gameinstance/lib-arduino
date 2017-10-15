@@ -273,6 +273,12 @@ void LCDNokia5110::Light(bool bOn) {
 	analogWrite(m_LEDPin, bOn ? 0 : 255);
 }
 
+
+void LCDNokia5100::DimLight(byte level) {
+	// 
+	analogWrite(m_LEDPin, level);
+}
+
 void LCDNokia5110::Start() {
 	// 
 	pinMode(m_SCEPin, OUTPUT);
