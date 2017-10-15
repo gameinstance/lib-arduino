@@ -77,6 +77,8 @@ class LCDNokia5110 {
 		void Write(unsigned char command, unsigned char data);
 		/// turns on or off the LED light
 		void Light(bool bOn = true);
+		/// dims the LED light
+		void DimLight(unsigned char level);
 		/// initiates the display
 		void Start();
 		
