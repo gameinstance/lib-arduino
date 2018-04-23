@@ -274,7 +274,7 @@ void LCDNokia5110::Light(bool bOn) {
 }
 
 
-void LCDNokia5100::DimLight(byte level) {
+void LCDNokia5100::DimLight(unsigned char level) {
 	// 
 	analogWrite(m_LEDPin, level);
 }
